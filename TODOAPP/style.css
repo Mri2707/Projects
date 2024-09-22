@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    height: 100%;
+}
+body{
+    background-image: url(pexels-content-pixie-1405717-2736499.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.heading-h1{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.grid-container{
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    grid-template-columns: 200px 150px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#data-enter-button,#date-enter-button,#time-enter-button{
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 500;
+}
+.imp-buttons{
+    font-size: 15px;
+    cursor: pointer;
+    height: 43px;
+    border-radius: 10px;
+    background:transparent;
+   border: none;
+    font-weight: 550;
+}
+
+.span-items{
+    font-size: 18px;
+    font-weight: 550;
+    
+}
+.input-buttons{
+    background:transparent;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single-column layout for smaller screens */
+        width: 100%; /* Make it full-width */
+    }
+    .heading-h1 {
+        font-size: 40px; /* Adjust heading size for tablets */
+    }
+    #data-enter-button, #date-enter-button, #time-enter-button {
+        font-size: 14px;
+        padding: 8px; /* Adjust input size for tablets */
+    }
+}
+
+/* For mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single-column layout */
+        width: 100%;
+    }
+    .heading-h1 {
+        font-size: 30px; /* Adjust heading size for mobile */
+    }
+    #data-enter-button, #date-enter-button, #time-enter-button {
+        font-size: 12px;
+        padding: 6px; /* Adjust input size for mobile */
+    }
+    .imp-buttons {
+        font-size: 14px; /* Reduce button font size */
+        height: 35px; /* Adjust button height for mobile */
+    }
+}
